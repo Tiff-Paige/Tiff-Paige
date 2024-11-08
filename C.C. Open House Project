@@ -1,2 +1,18 @@
 #Open house project
 #Topic: quiz??
+
+print ("Welcome to the animal test!")
+print ("Answer some questions and get your animal!")
+
+print ("------------------------------------------")
+
+print ("First question, what's your favorite color")
+color_list = ["Red","red","Orange","orange","Yellow","yellow","Green","green","Blue","blue","Purple","purple","Violet","violet","Black","black","White","white","Grey","grey","Magenta","magenta","Cyan","cyan","Teal","teal","Turquoise","turquoise","Mauve","mauve","Burgundy","burgundy","Vermillion","vermillion","Amber","amber","Indigo","indigo","Beige","beige","Brown","brown","Pink","pink","Sage","sage","Scarlet","scarlet","Crimson","crimson","Mint","mint","Plum","plum","Emerald","emerald","Forest","forest"]
+fav_color = input ()
+if (fav_color in color_list):
+    print (fav_color + ", good choice!")
+while (fav_color in color_list == False):
+    print (fav_color, "is not on the list, try again!")
+    fav_color = input ()
+    if (fav_color in color_list):
+        print (fav_color + ", good choice!")
